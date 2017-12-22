@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView xmlns:cardview="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="5dp"
+        cardview:cardCornerRadius="5dp"
+        cardview:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewFrndWallUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_alignParentStart="true"
+                android:textSize="15sp"
+                android:layout_alignParentTop="true"
+                android:hint="Bob" />
+
+            <TextView
+                android:id="@+id/textViewFrndWallTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textViewWallUsername"
+                android:layout_alignBottom="@+id/textViewWallUsername"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="225dp"
+                android:text="10 minutes ago" />
+
+            <TextView
+                android:id="@+id/textviewFrndWallPost_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="38dp"
+                android:layout_marginLeft="13dp"
+                android:textSize="15sp"
+                android:layout_below="@+id/textViewUsername"
+                android:inputType="textMultiLine" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

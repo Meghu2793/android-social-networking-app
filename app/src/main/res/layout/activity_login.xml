@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="example.com.hw07.LoginActivity">
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="First name"
+        android:layout_marginLeft="42dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/editTextFirstName"
+        android:layout_marginTop="48dp"
+        app:layout_constraintTop_toBottomOf="parent"
+        android:layout_marginStart="42dp" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Last name"
+        android:layout_marginLeft="42dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/editTextLastName"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFirstName"
+        android:layout_marginStart="42dp" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_marginLeft="42dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/editTextRegUserName"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLastName"
+        android:layout_marginStart="42dp" />
+
+    <EditText
+        android:id="@+id/birthday"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Birthday(MM-DD-YYYY)"
+        android:layout_marginLeft="42dp"
+        android:inputType="datetime"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:focusableInTouchMode="false"
+        android:maxLines="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRegUserName"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_marginLeft="42dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/editTextRegPwd1"
+        android:inputType="textPassword"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        app:layout_constraintTop_toBottomOf="@+id/birthday"
+        android:layout_marginStart="42dp" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:layout_marginLeft="42dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/editTextRegPwd2"
+        android:inputType="textPassword"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRegPwd1"
+        android:layout_marginStart="42dp" />
+
+    <Button
+        android:id="@+id/buttonSignUpReg"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="SignUp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRegPwd2"
+        android:layout_marginLeft="126dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
