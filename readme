@@ -1,1 +1,4 @@
 An Android Application.
+
+A social networking Android app where a user could make friends and post messages. Firebase authentication, Firebase database, 
+and Firebase cloud storage are used. Facebook friend-module is implemented.
